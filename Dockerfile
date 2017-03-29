@@ -18,8 +18,6 @@ ENV HEADER_IMAGE_LINK https://raw.githubusercontent.com/docker-library/docs/c350
 ENV WEBSITE_LINK http://www.google.com
 ENV RUST_PATH /opt/rust
 
-RUN systemctl disable firewalld
-
 RUN yum install glibc.i686 libstdc++.i686 wget nano tar screen
 
 RUN mkdir $RUST_PATH
