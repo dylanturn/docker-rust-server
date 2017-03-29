@@ -29,6 +29,8 @@ RUN chmod -v +x $RUST_PATH/startrust.sh
 RUN mkdir /opt/steam
 ADD runscript /opt/steam/runscript
 
+VOLUME $RUST_PATH
+
 RUN cd /opt/steam && \
     wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz && \
     tar xf steamcmd_linux.tar.gz && \
