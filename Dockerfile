@@ -18,7 +18,7 @@ ENV HEADER_IMAGE_LINK https://raw.githubusercontent.com/docker-library/docs/c350
 ENV WEBSITE_LINK http://www.google.com
 ENV RUST_PATH /opt/rust
 
-RUN yum -y install glibc.i686 libstdc++.i686 wget nano tar screen
+RUN yum -y install glibc.i686 libstdc++ wget nano tar screen
 
 RUN mkdir $RUST_PATH
 ADD startrust.sh $RUST_PATH
